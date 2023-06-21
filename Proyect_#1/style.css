@@ -4,12 +4,16 @@
     box-sizing: border-box;
     overflow-x: hidden;
 }
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 img{
     margin-top: 20px;
     width: 250px;
 }
 header{
-    position: fixed;
     width: 100vw;
     height: 100px;
     background-color: #003366;
@@ -19,7 +23,6 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 100px;
     padding: 90px 30px;
     height: fit-content;
 }
@@ -43,7 +46,9 @@ input{
 input:focus{
     outline-style:none;
 }
-
+#curp{
+    text-transform: uppercase;
+}
 button{
     padding: 10px;
     color: white;
@@ -56,15 +61,24 @@ button{
     width: 200px;
 }
 button:hover{
-    transition: 0.5s;
-    font-weight: 600;
+    transition: 0.2s;
     background-color: #004499;
+    cursor: pointer;
+    pointer-events: auto;
 }
 i{
-    margin-left: 5px;
+    padding-top: 2px;
+    margin-right: 5px;
 }
 .margin_default{
     margin-top: 20px;
+    font-weight: 550;
+}
+footer{
+    width: 100vw;
+    min-height: 100px;
+    background-color: #003366;
+    margin-top: auto;
 }
 @media screen and (max-width:600px) {
     form{
