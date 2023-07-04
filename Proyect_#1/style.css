@@ -25,7 +25,7 @@ header{
 main {
     display: flex;
     justify-content: center;
-    padding: 90px 30px;
+    padding: 60px 30px;
 }
 
 form {
@@ -49,6 +49,21 @@ form {
     justify-content: space-between;
     max-width: 80%;
 }
+
+.flex-column{
+    flex-direction: column;
+}
+
+.g-recaptcha{
+    padding-top: .9rem;
+}
+
+.g-recaptcha div {
+    overflow:hidden;
+}
+
+
+
 
 input {
     margin: 5px;
@@ -89,6 +104,14 @@ button:hover{
 i{
     padding: 2px;
     margin-left: 5px;
+}
+
+.error{
+    color: red;
+    width: 100%;
+    padding-left: 2rem;
+    font-size: 12px;
+    text-shadow: rgb(214 26 26 / 57%) 3px -1px 3px;
 }
 
 .margin_default {
